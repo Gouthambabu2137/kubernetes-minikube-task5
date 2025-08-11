@@ -16,7 +16,7 @@ Set up a local Kubernetes cluster using Minikube, deploy a containerized applica
 ## Implementation Steps
 
 ### 1. Start Minikube
-```bash`
+```bash
 minikube start --driver=docker
 minikube status
 2. Create Deployment
