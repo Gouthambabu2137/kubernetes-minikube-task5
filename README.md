@@ -20,7 +20,7 @@ Set up a local Kubernetes cluster using Minikube, deploy a containerized applica
 minikube start --driver=docker
 minikube status
 
-##2. Create Deployment
+###2. Create Deployment
 deployment.yaml
 
 apiVersion: apps/v1
@@ -48,7 +48,7 @@ spec:
 Apply:
 kubectl apply -f deployment.yaml
 
- ##3. Create Service
+ ###3. Create Service
 service.yaml
 apiVersion: v1
 kind: Service
@@ -67,19 +67,19 @@ spec:
 Apply:
 kubectl apply -f service.yaml
 
-##4. Verify Resources
+###4. Verify Resources
 kubectl get pods
 kubectl get svc
 
-##5. Scale Deployment
+###5. Scale Deployment
 kubectl scale deployment nginx-deployment --replicas=3
 kubectl get pods
 
-##6. Inspect and Monitor
+###6. Inspect and Monitor
 kubectl describe pod <pod-name>
 kubectl logs <pod-name>
 
-##Screenshots
+###Screenshots
 Verification outputs and steps are saved in the Screenshots/ folder:
 
 Cluster status
@@ -97,7 +97,9 @@ Pod description
 Accessing the Application
 minikube service nginx-service
 
-#Author#
+###Author###
 Goutham Babu
+
+Repository: kubernetes-minikube-task5
 
 Repository: kubernetes-minikube-task5
